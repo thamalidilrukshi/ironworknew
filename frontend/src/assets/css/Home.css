@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-width: 320px; /* Prevent overflow on very small screens */
 }
 
 /* Enable Smooth Scrolling */
@@ -447,5 +448,42 @@ iframe:hover {
 
   .nav-links a {
     font-size: 12px; /* Even smaller font size for mobile */
+  }
+
+  .top-bar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .contact-info span {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .cta-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-footer,
+  .quick-links,
+  .contact-footer {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
   }
 }
