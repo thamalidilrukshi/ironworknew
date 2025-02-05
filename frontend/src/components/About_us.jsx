@@ -389,7 +389,7 @@ const styles = {
       fontSize: "1rem",
     },
     image: {
-      maxWidth: "100%",
+      maxWidth: "10%",
     },
   },
 

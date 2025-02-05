@@ -217,7 +217,7 @@ const Home = () => {
       {/* <ServicePage /> */}
       <ServicesSection />
       <LatestProjectsSection />
-      <CounterBar />
+      <CounterBar /><br/>
       <Location />
      
     </div>
