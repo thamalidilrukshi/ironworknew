@@ -1,0 +1,123 @@
+/* General Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    margin: 0;
+    width: 100%; /* Ensure footer takes full width */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; /* Prevent overflow on smaller screens */
+    box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+  }
+  
+  .about-footer,
+  .quick-links,
+  .contact-footer {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer p,
+  .footer ul li a {
+    font-size: 16px;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer ul li a:hover {
+    color: #ffc107;
+  }
+  
+  /* Footer bottom section */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #ccc;
+  }
+  
+  /* Google Map */
+  iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    transition: box-shadow 0.3s;
+  }
+  
+  iframe:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Location Section */
+  .location h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  #future {
+    color: #ffc107;
+    font-weight: bold;
+    padding: 5px 10px;
+    position: relative;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+      padding: 0 10px; /* Add padding to avoid overflow */
+    }
+  
+    .about-footer,
+    .quick-links,
+    .contact-footer {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer h3 {
+      font-size: 18px;
+    }
+  
+    .footer p,
+    .footer ul li a {
+      font-size: 14px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 30px 10px;
+    }
+  
+    .footer h3 {
+      font-size: 16px;
+    }
+  
+    .footer p,
+    .footer ul li a {
+      font-size: 12px;
+    }
+  }
+  

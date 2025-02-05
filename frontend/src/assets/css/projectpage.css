@@ -1,0 +1,77 @@
+.background-section {
+    position: relative;
+    width: 100%;
+    height: 50vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/hero-bg.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .breadcrumb {
+    font-size: 16px;
+    margin: 10px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Optional dark overlay */
+  .background-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust overlay darkness */
+    z-index: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 36px;
+    }
+  
+    .breadcrumb {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 28px;
+    }
+  
+    .breadcrumb {
+      font-size: 12px;
+    }
+  }
+  

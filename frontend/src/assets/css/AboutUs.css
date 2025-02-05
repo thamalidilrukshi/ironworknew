@@ -1,0 +1,237 @@
+/* Main Container Styles */
+.about-header {
+  background-image: url('../images/107bc9d02bb775659cc534dacf6b2414.jpg'); /* Add your background image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 8rem 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-attachment: fixed; /* Parallax effect */
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-header p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+  background-color: #ff8c00;
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e67e00;
+  transform: translateY(-5px);
+}
+
+/* About Us Section */
+.about-us {
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  opacity: 0;
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.about-content.fade-in {
+  opacity: 1;
+  transform: translateY(0); /* Move to original position */
+}
+
+.about-text {
+  flex: 1;
+  padding: 2rem;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h3 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+.about-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.about-features li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.about-features li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #ff8c00;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 500px;
+  margin: auto;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.about-image img.image-zoom {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Projects Section */
+.projects-section {
+  background-color: #f0f0f0;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.project-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+}
+
+.project-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.1);
+}
+
+.project-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .about-text p,
+  .project-info p {
+    font-size: 0.9rem;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+}

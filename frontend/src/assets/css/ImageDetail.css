@@ -1,0 +1,117 @@
+/* ImageDetail.css */
+.image-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    gap: 60px;
+    position: relative;
+    margin-top: 100px;
+    background: linear-gradient(145deg, #f9f9f9, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.detail-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 0.95;
+}
+
+.detail-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+    opacity: 1;
+}
+
+.image-detail .description {
+    max-width: 50%;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.image-detail h1 {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    animation: slideDown 0.8s ease-out;
+}
+
+.image-detail p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes slideDown {
+    from {
+        top: -100px;
+        opacity: 0;
+    }
+    to {
+        top: -60px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .image-detail {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 80px;
+        padding: 30px 15px;
+    }
+
+    .detail-image,
+    .image-detail .description {
+        max-width: 100%;
+    }
+
+    .image-detail h1 {
+        font-size: 2.5rem;
+        top: -50px;
+    }
+
+    .image-detail p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-detail h1 {
+        font-size: 2rem;
+        top: -40px;
+    }
+
+    .image-detail p {
+        font-size: 1rem;
+    }
+}
