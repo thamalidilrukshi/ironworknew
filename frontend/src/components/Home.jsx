@@ -11,7 +11,7 @@ const TopBar = () => {
     <div className="top-bar">
       <div className="contact-info">
         <span>Email: info@example.com</span>
-        <span>Phone: +94770151250</span>
+        <span>Phone: +947701512500</span>
       </div>
       <div className="social-icons">
         <a href="#">Facebook</a>
