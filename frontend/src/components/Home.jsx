@@ -192,7 +192,7 @@ const Footer = () => {
         <div className="contact-footer">
           <h3>Contact Us</h3>
           <p>Email: thamalidilrukshi7@gmail.com</p>
-          <p>Phone: +94770151250</p>
+          <p>Phone: +947701512500</p>
           <p>Address: Sri Lanka</p>
         </div>
       </div>
