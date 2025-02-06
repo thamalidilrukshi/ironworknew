@@ -193,23 +193,6 @@ const AboutUs = () => {
       {/* About Section */}
       <section style={styles.aboutSection}>
         <div style={styles.aboutContent}>
-          {/* Image */}
-          <motion.div
-            style={styles.imageContainer}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 1.5,
-              ease: "easeInOut",
-            }}
-          >
-            <img
-              src="/images/1.jpg" // Replace with construction-related image
-              alt="Ceylone Engineering Team"
-              style={styles.image}
-            />
-          </motion.div>
-
           {/* Text Content */}
           <motion.div
             style={styles.textContent}
@@ -234,6 +217,23 @@ const AboutUs = () => {
               residential, commercial, and industrial clients, ensuring that every piece of work 
               we do meets the highest standards.
             </p>
+          </motion.div>
+
+          {/* Image */}
+          <motion.div
+            style={styles.imageContainer}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1.5,
+              ease: "easeInOut",
+            }}
+          >
+            <img
+              src="/images/1.jpg" // Replace with construction-related image
+              alt="Ceylone Engineering Team"
+              style={styles.image}
+            />
           </motion.div>
         </div>
       </section>
@@ -389,7 +389,7 @@ const styles = {
       fontSize: "1rem",
     },
     image: {
-      maxWidth: "10%",
+      maxWidth: "00%",
     },
   },
 
@@ -409,6 +409,16 @@ const styles = {
     highlight: {
       maxWidth: "100%",
       padding: "15px",
+    },
+    aboutContent: {
+      flexDirection: "column", // Ensure column layout on mobile
+    },
+    imageContainer: {
+      order: 2, // Move image below the text
+      marginTop: "20px", // Add spacing between text and image
+    },
+    textContent: {
+      order: 1, // Ensure text comes first
     },
   },
 };

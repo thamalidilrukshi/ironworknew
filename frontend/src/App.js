@@ -27,6 +27,7 @@ import Customers from './components/Customers';
 
 import ProtectedRoute from './components/ProtectedRoute';
 import ImageDetail from './components/ImageDetail';
+import CustomerForm from './components/CustomerForm.js';
 
 
 
@@ -57,6 +58,7 @@ const App = () => {
 <Route path="/ProtectedRoute" element={<ProtectedRoute />} />
 
 <Route path="/image/:id" element={<ImageDetail />} />
+<Route path="/customer/:id" element={<CustomerForm />} />
 
        
       </Routes>
